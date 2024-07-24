@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 // class User {
 //   public email: string; // Accessible from anywhere.
 //   private name: string; //  if we  dont want  to access it then use private and we can access it within the class
@@ -53,3 +54,7 @@ class subUser extends User {
 const abhay = new User("h@gmail.com", "abhay");
 //   abhay.city = "bengaluru";
 // abhay.name
+=======
+console.log("i am still here")
+console.log("i am still amezing")
+>>>>>>> parent of 6287e63 (first commit)

@@ -13,7 +13,9 @@
 
 class User {
  
-  private _courseCount:number = 1
+  // private _courseCount:number = 1
+  protected _courseCount:number = 1
+  
 
   readonly city: string = "jaipur"; // when we use readonly we are allow to acces it but not set it
   constructor(
@@ -37,6 +39,15 @@ class User {
     }
     this._courseCount= courseNum
    }
+}
+
+// Inheritance
+
+class subUser extends User {
+  isFamily :boolean = true
+  changeCourseCount(){
+    this._courseCount = 4   // to resolve this error we use the keyword protected, this keyword help to access within the class as well as any class which inherites that class
+  }
 }
 
 const abhay = new User("h@gmail.com", "abhay");
